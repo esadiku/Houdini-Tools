@@ -8,7 +8,19 @@ Houdini-Tools/
 │   ├─ ConnectWires.shelf
 │   └─ SOPtoOBJ.shelf
 ├─ installer.py
-├─ README.md
+
+
+├─ README.mdHoudini Tools includes the following shelf tools:
+
+- **objMerge**: Merge multiple objects easily.
+
+- **CreateNull**: Automatically create null nodes with input.
+
+- **ConnectWires**: Connect nodes quickly in SOP network.
+
+- **SOPtoOBJ**: Convert SOP to Object-level node.
+
+
 
 ## Installation
 
