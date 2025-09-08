@@ -8,7 +8,7 @@
 
 - **ConnectWires**: Connect nodes quickly in SOP network.
 
-- **SOPtoOBJ**: Convert SOP to Object-level node.
+- **SOPtoOBJ**: Convert SOP to Object Scene node.
 
 
 
