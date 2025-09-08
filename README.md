@@ -1,16 +1,6 @@
 # Houdini-Tools
-Houdini Shelf Tools
-Houdini Tools is a collection of shelf tools for Houdini:
-Houdini-Tools/
-├─ shelf/
-│   ├─ objMerge.shelf
-│   ├─ CreateNull.shelf
-│   ├─ ConnectWires.shelf
-│   └─ SOPtoOBJ.shelf
-├─ installer.py
 
-
-├─ README.mdHoudini Tools includes the following shelf tools:
+<br>Houdini Tools<br> includes the following shelf tools:
 
 - **objMerge**: Merge multiple objects easily.
 
@@ -28,3 +18,29 @@ git clone https://github.com/esadiku/Houdini-Tools.git
 cd Houdini-Tools
 python installer.py
 
+1. Clone the repository:
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/esadiku/Houdini-Tools.git
+
+    Navigate to the folder:
+
+cd Houdini-Tools
+
+    Run the installer (Python 3 required):
+
+python installer.py
+
+    This will copy the Houdini-Tools folder into your Houdini Documents folder.
+
+Usage
+
+    Open Houdini → Shelf → Import Shelf → select the shelf/ folder inside Houdini-Tools.
+
+    All tools will now appear on the shelf ready to use.
+
+License
+
+This repository is open source and free to use.
