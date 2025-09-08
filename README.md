@@ -1,11 +1,14 @@
 # Houdini-Tools
 Houdini Shelf Tools
 Houdini Tools is a collection of shelf tools for Houdini:
-
-- objMerge
-- CreateNull
-- ConnectWires
-- SOPtoOBJ
+Houdini-Tools/
+├─ shelf/
+│   ├─ objMerge.shelf
+│   ├─ CreateNull.shelf
+│   ├─ ConnectWires.shelf
+│   └─ SOPtoOBJ.shelf
+├─ installer.py
+├─ README.md
 
 ## Installation
 
