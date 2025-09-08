@@ -12,4 +12,7 @@ Houdini-Tools/
 
 ## Installation
 
-1. Clone the repository:git clone https://github.com/esadiku/Houdini-Tools.git
+git clone https://github.com/esadiku/Houdini-Tools.git
+cd Houdini-Tools
+python installer.py
+
