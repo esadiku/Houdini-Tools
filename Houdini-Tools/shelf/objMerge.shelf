@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shelfDocument>
+  <!-- This file contains definitions of shelves, toolbars, and tools.
+ It should not be hand-edited when it is being used by the application.
+ Note, that two definitions of the same element are not allowed in
+ a single file. -->
+
+  <tool name="OBJ_Merge" label="Object Merge" icon="SOP_object_merge">
+    <script scriptType="python"><![CDATA[import hou
+netEditor = hou.ui.paneTabOfType(hou.paneTabType.NetworkEditor)
+count = 0
+for tNode in hou.selectedNodes():
+    tPath = tNode.path()
+    tRoot = tPath.split("/")[1]
+    tName = "_"+tNode.name() + "_"
+if tRoot=="obj" and len(tPath.split("/"))>2:
+        nNode = tNode.parent().createNode("object_merge", node_name=tName)
+        tPos = netEditor.cursorPosition()  
+        nNode.setPosition([tPos[0]+(0.1*count), tPos[1]+(-0.75*count)])
+        nNode.parm("objpath1").set(tPath)
+        nNode.parm("xformtype").set(1)
+        count+=1]]></script>
+  </tool>
+</shelfDocument>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shelfDocument>
+  <!-- This file contains definitions of shelves, toolbars, and tools.
+ It should not be hand-edited when it is being used by the application.
+ Note, that two definitions of the same element are not allowed in
+ a single file. -->
+
+  <tool name="Null_Tool" label="Null_Tool" icon="SOP_null">
+    <script scriptType="python"><![CDATA[node = hou.pwd()
+for i in hou.selectedNodes():
+    dir = i.parent().path() + '/'
+    selNodeName = i.name()
+    nodeinfo = i.type().name()
+    otherName = hou.ui.readInput('Name the null', buttons=('Yes', 'No'), initial_contents='')[1]
+    otherName = otherName.upper()  # <-- E bÃ«n me kapital
+    nullnode = hou.node('/%s'%dir).createNode('null', 'OUT_%s'%otherName)
+    selNodePos = i.position()    
+    nullnode.setColor(hou.Color([0, 0, 0]))
+    nullnode.setPosition(hou.Vector2(selNodePos[0], selNodePos[1]-1))
+    nullnode.setInput(0, i)
+    i.setSelected(False)
+    nullnode.setSelected(True)
+    try:
+        nullnode.setDisplayFlag(True)
+        nullnode.setRenderFlag(True)
+    except:
+        nullnode.setDisplayFlag(True)
+]]></script>
+  </tool>
+</shelfDocument>
