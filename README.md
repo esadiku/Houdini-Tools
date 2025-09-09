@@ -24,7 +24,6 @@
    **Linux**:  
    `/home/<YourUser>/houdini<version>/toolbar/`
 
-   If the `toolbar` folder does not exist, create it.
 
 3. Open Houdini. Your new **Houdini Tools** shelf will appear automatically.
 
