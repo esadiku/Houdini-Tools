@@ -1,6 +1,6 @@
 ### Houdini Tools ###
 ---
-##### *Houdini Tools* is a collection of 4 practical shelf tools designed to make everyday workflows in Houdini faster and easier. These tools reduce repetitive steps and provide shortcuts for common node operations
+##### **Houdini Tools** is a collection of 4 practical shelf tools designed to make everyday workflows in Houdini faster and easier. These tools reduce repetitive steps and provide shortcuts for common node operations
 ---
 
 - **SOPtoOBJ**: Output SOP nodes to Object level nodes with a custom dialog.<br> *Hotkeys : ```Ctrl+Shift+R```*
