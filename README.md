@@ -4,10 +4,10 @@ Houdini Tools is a collection of 4 useful shelf tools for Houdini:
 
 - **SOPtoOBJ**: Convert SOP nodes to Object level nodes with a custom dialog.<br>*Hotkeys : Ctrl+Shift+R*
 - **Null Tool**: Automatically create Null nodes from selected nodes with capitalized names.<br> *Hotkeys : Ctrl+Shift+C*
-- **Wire Tool**: Quickly connect nodes in SOP networks based on selection. <br> *Hotkeys :  Shift+1*
+- **Wire Tool**: Quickly connect nodes in SOP networks based on selection. <br>   *Hotkeys :  Shift+1*
 - **Object Merge**: Quickly create object_merge nodes for selected nodes. <br> *Hotkeys :  Shift+Q*
 
-## Installation (Cross-Platform)
+### Installation (Cross-Platform)
 
 1. Clone or download this repository:
    `git clone https://github.com/esadiku/Houdini-Tools.git`
@@ -28,16 +28,16 @@ Houdini Tools is a collection of 4 useful shelf tools for Houdini:
 
 3. Open Houdini. Your new **Houdini Tools** shelf will appear automatically.
 
-## Usage
+### Usage
 
 - Open Houdini → Shelf → Select **Houdini Tools** shelf.
 - Use the tools as needed directly in your node networks.
 
-## Notes
+### Notes
 
 - These tools are designed to work with any Houdini version.
 - The installer is optional; you can manually copy the shelf to any Houdini version.
 
-## License
+### License
 
-This repository is open source and free to use.
+This is free to use ❤️.
