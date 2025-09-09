@@ -1,6 +1,6 @@
-### Houdini Tools
+### Houdini Tools ###
 
-###*Houdini Tools* is a collection of 4 practical shelf tools designed to make everyday workflows in Houdini faster and easier.  
+*Houdini Tools* is a collection of 4 practical shelf tools designed to make everyday workflows in Houdini faster and easier.  
 These tools reduce repetitive steps and provide shortcuts for common node operations.
 ---
 
