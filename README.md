@@ -37,7 +37,6 @@
 - These tools are designed to work with any Houdini version.
 - The installer is optional; you can manually copy the shelf to any Houdini version.
 
-### License
 
 This is free to use ❤️.
 [Watch the video](https://youtu.be/JDJTN9RaM5U)
