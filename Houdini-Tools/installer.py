@@ -1,14 +1,51 @@
 import os
 import shutil
-import hou
+import platform
 
-source_folder = os.path.join(os.path.dirname(__file__), "Houdini-Tools")
-home = os.getenv("HOME") or os.getenv("USERPROFILE")
-houdini_docs = os.path.join(home, "Documents", "houdini" + str(hou.applicationVersion()[0]))
-dest_folder = os.path.join(houdini_docs, "Houdini-Tools")
+def get_houdini_versions():
+    home = os.path.expanduser("~")
+    system = platform.system()
 
-os.makedirs(dest_folder, exist_ok=True)
-shutil.copytree(source_folder, dest_folder, dirs_exist_ok=True)
+    if system == "Windows":
+        base = os.path.join(home, "Documents")
+    elif system == "Darwin":
+        base = os.path.join(home, "Library", "Preferences", "houdini")
+    else:
+        base = home
 
-print(f"Houdini Tools installed in Houdini Documents at:\n{dest_folder}")
-print("\nNext step: In Houdini → Shelf → Import Shelf → select 'shelf/' folder inside Houdini-Tools")
+    versions = []
+    if os.path.exists(base):
+        for folder in os.listdir(base):
+            if folder.startswith("houdini") and folder[7:].replace(".", "").isdigit():
+                versions.append(os.path.join(base, folder))
+    return versions
+
+def install_shelf():
+    repo_root = os.path.dirname(os.path.abspath(__file__))
+    source_toolbar = os.path.join(repo_root, "toolbar")
+
+    if not os.path.exists(source_toolbar):
+        print("❌ 'toolbar' folder not found in the repository.")
+        return
+
+    versions = get_houdini_versions()
+    if not versions:
+        print("⚠️ No Houdini versions found on this computer.")
+        return
+
+    for houdini_dir in versions:
+        dest_toolbar = os.path.join(houdini_dir, "toolbar")
+        os.makedirs(dest_toolbar, exist_ok=True)
+
+        for file in os.listdir(source_toolbar):
+            if file.endswith(".shelf"):
+                src = os.path.join(source_toolbar, file)
+                dst = os.path.join(dest_toolbar, file)
+                shutil.copy2(src, dst)
+                print(f"✅ {file} → {dest_toolbar}")
+
+    print("\n🎉 Installation completed for all Houdini versions!")
+    print("Restart Houdini and your shelves will appear automatically.")
+
+if __name__ == "__main__":
+    install_shelf()
