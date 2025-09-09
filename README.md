@@ -1,24 +1,43 @@
-# Houdini-Tools
+# Houdini Tools
 
-<br>Houdini Tools<br> includes the following shelf tools:
+Houdini Tools is a collection of 4 useful shelf tools for Houdini:
 
-- **objMerge**: Merge multiple objects easily.
+- **SOPtoOBJ**: Convert SOP nodes to Object level nodes with a custom dialog.
+- **Null Tool**: Automatically create Null nodes from selected nodes with capitalized names.
+- **Wire Tool**: Quickly connect nodes in SOP networks based on selection.
+- **Object Merge**: Quickly create object_merge nodes for selected nodes.
 
-- **CreateNull**: Automatically create null nodes with input.
+## Installation (Cross-Platform)
 
-- **ConnectWires**: Connect nodes quickly in SOP network.
+1. Clone or download this repository:
+   `git clone https://github.com/esadiku/Houdini-Tools.git`
+   or download as ZIP and extract.
 
-- **SOPtoOBJ**: Via SOP node to Object Scene.
+2. Copy the `shelf/` folder into your Houdini Documents directory:
 
+   **Windows**:  
+   `C:\Users\<YourUser>\Documents\houdini<version>\toolbar\`
 
+   **macOS**:  
+   `/Users/<YourUser>/Library/Preferences/houdini<version>/toolbar/`
 
-## Installation <br> Linux (Ubuntu/Debian)
+   **Linux**:  
+   `/home/<YourUser>/houdini<version>/toolbar/`
 
-1. Clone the repository:<br>
-sudo apt update<br>
-sudo apt install git -y<br>
-git --version<br><br>
-2. `git clone https://github.com/esadiku/Houdini-Tools.git`
-3. Navigate to the folder:<br>
-`cd Houdini-Tools`
+   If the `toolbar` folder does not exist, create it.
 
+3. Open Houdini. Your new **Houdini Tools** shelf will appear automatically.
+
+## Usage
+
+- Open Houdini → Shelf → Select **Houdini Tools** shelf.
+- Use the tools as needed directly in your node networks.
+
+## Notes
+
+- These tools are designed to work with any Houdini version.
+- The installer is optional; you can manually copy the shelf to any Houdini version.
+
+## License
+
+This repository is open source and free to use.
