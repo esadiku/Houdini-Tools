@@ -2,8 +2,8 @@
 ---
 <small>Houdini Tools is a collection of 4 practical shelf tools designed to make everyday workflows in Houdini faster and easier. These tools reduce repetitive steps and provide shortcuts for common node operations</small>
 
-- **SOPtoOBJ**: Output SOP nodes to Object level nodes with a custom dialog.<br> *Hotkeys : ```Ctrl+Shift+R```*
-- **Null Tool**: Automatically create Null nodes from selected nodes with capitalized names.<br></sub> **Hotkeys : ```Ctrl+Shift+C```**</sub>
+- **SOPtoOBJ**: Output SOP nodes to Object level nodes with a custom dialog.<br> <sub> **Hotkeys : ```Ctrl+Shift+R```**</sub>
+- **Null Tool**: Automatically create Null nodes from selected nodes with capitalized names.<br> <sub> **Hotkeys : ```Ctrl+Shift+C```**</sub>
 - **Wire Tool**: Quickly connect nodes in SOP networks based on selection. <br> <sub> **Hotkeys :  ```Shift+1```**</sub>
 - **Object Merge**: Quickly create object_merge nodes for selected nodes.  <br> <sub> **Hotkeys :  ```Shift+Q```**</sub>
 
