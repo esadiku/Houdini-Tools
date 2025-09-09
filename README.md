@@ -41,7 +41,7 @@
 This is free to use ❤️.
 
 
+[![Watch the video](https://img.youtube.com/vi/JDJTN9RaM5U/3.jpg)](https://github.com/user-attachments/assets/aa3d18b8-0c9a-4af9-9897-10bc3134265c)
 
-[Watch video](https://github.com/user-attachments/assets/aa3d18b8-0c9a-4af9-9897-10bc3134265c)
 
 
